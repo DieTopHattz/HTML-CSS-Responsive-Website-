@@ -1,0 +1,234 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #111 0%, #4b0082 50%, #da70d3 100%);
+  color: white;
+  overflow-x:
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: relative;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-link {
+  color:white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+  color: #da70d3;
+}
+
+.login-btn {
+  background: transparent;
+  border: 2px solid #da70d3;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease
+}
+
+.login-btn:hover {
+  background: #da70d3;
+  color: #1a1a1a;
+}
+
+
+/* -- Hero Section --*/
+.hero {
+  padding: 0 50px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-title {
+  font size: 4.5rem;
+  font-weight: 900;
+  line weight: 0.9;
+  letter spacing: 3px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color :#cccccc;
+  max-width: 400px;
+}
+
+.read-more {
+  background: #da70d3;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  background: #da70d3;
+  transform: translateY(-2px);
+}
+
+/* MEDIA QUERIES FOR TABLET (min-width: 600px) */
+
+@media (min-width: 600px) {
+    .post-card {
+        display: flex; 
+        flex-direction: row; 
+    }
+    .post-image {
+        width: 40%; 
+        max-height: none; 
+    }
+    .post-details {
+        width: 60%;
+    }
+     .main-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #24262b;
+    color: #fff;
+    padding: 32px 20px;
+    margin-top: 40px 20px 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+.footer-col {
+    width: 30%;
+}
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+.website-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+.quick-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    display: block;
+}
+.quick-links a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 16px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #1DA1F2;
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 16px;
+}
+.footer-bottom p {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin: 0;
+}
+.site-footer .copyright {
+    text-align: center;
+    padding: 20px 0;    
+    margin: 0;          
+    border-top: 1px solid #333;
+}
+/* MEDIA QUERIES FOR TABLET (min-width: 600px) */
+
+@media (min-width: 600px) {
+    .post-card {
+        display: flex; 
+        flex-direction: row; 
+    }
+    .post-image {
+        width: 40%; 
+        max-height: none; 
+    }
+    .post-details {
+        width: 60%;
+    }
+     .main-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MEDIA DESKTOP (min-width: 900px) */
+
+@media (min-width: 900px) {
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+    .main-content {
+        grid-template-columns: 2fr 1fr;
+    }
+    .header-container,
+    .navigation-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
