@@ -8,7 +8,7 @@ body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(135deg, #111 0%, #4b0082 50%, #da70d3 100%);
   color: white;
-  overflow-x:
+  overflow-x: hidden;
 }
 
 .container {
@@ -66,7 +66,7 @@ body {
 }
 
 
-/* -- Hero Section --*/
+/* -- Content --*/
 .hero {
   padding: 0 50px;
   min-height: calc(100vh - 80px);
@@ -75,6 +75,16 @@ body {
   justify-content: space-between;
 }
 
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  flex: 1;
+  padding: 50px 0;
+}
+
+/* -- Content Kiri --*/
 .hero-left {
   display: flex;
   flex-direction: column;
@@ -82,10 +92,10 @@ body {
 }
 
 .hero-title {
-  font size: 4.5rem;
+  font-size: 4.5rem;
   font-weight: 900;
-  line weight: 0.9;
-  letter spacing: 3px;
+  line-height: 0.9;
+  letter-spacing: 3px;
 }
 
 .hero-description {
@@ -114,7 +124,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* MEDIA QUERIES FOR TABLET (min-width: 600px) */
 
 /* -- Content Image --*/
 .hero-center {
