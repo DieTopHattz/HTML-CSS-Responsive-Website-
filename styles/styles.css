@@ -1,4 +1,4 @@
-﻿* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -245,120 +245,7 @@ body {
   line-height: 1.5;
 }
 
-/* MEDIA QUERIES FOR TABLET (min-width: 600px) */
-@media (min-width: 600px) {
-    .post-card {
-        display: flex; 
-        flex-direction: row; 
-    }
-    .post-image {
-        width: 40%; 
-        max-height: none; 
-    }
-    .post-details {
-        width: 60%;
-    }
-     .main-content {
-        grid-template-columns: 1fr;
-    }
-}
 
-/* FOOTER */
-.site-footer {
-    background-color: #24262b;
-    color: #fff;
-    padding: 32px 20px;
-    margin-top: 40px 20px 20px;
-}
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 32px;
-}
-.footer-col {
-    width: 30%;
-}
-.footer-col h3 {
-    font-size: 1.2rem;
-    margin-bottom: 16px;
-}
-.website-info p {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-.quick-links ul {
-    list-style: none;
-    padding: 0;
-}
-.quick-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.9rem;
-    line-height: 2;
-    display: block;
-}
-.quick-links a:hover {
-    text-decoration: underline;
-}
-.social-icons a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin-right: 16px;
-    transition: color 0.3s;
-}
-.social-icons a:hover {
-    color: #1DA1F2;
-}
-.footer-bottom {
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 16px;
-}
-.footer-bottom p {
-    font-size: 0.8rem;
-    opacity: 0.6;
-    margin: 0;
-}
-.site-footer .copyright {
-    text-align: center;
-    padding: 20px 0;    
-    margin: 0;          
-    border-top: 1px solid #333;
-}
-/* MEDIA QUERIES FOR TABLET (min-width: 600px) */
 
-@media (min-width: 600px) {
-    .post-card {
-        display: flex; 
-        flex-direction: row; 
-    }
-    .post-image {
-        width: 40%; 
-        max-height: none; 
-    }
-    .post-details {
-        width: 60%;
-    }
-     .main-content {
-        grid-template-columns: 1fr;
-    }
-}
 
-/* MEDIA DESKTOP (min-width: 900px) */
 
-@media (min-width: 900px) {
-    .header .container {
-        flex-direction: row;
-        justify-content: space-between; 
-    }
-    .main-content {
-        grid-template-columns: 2fr 1fr;
-    }
-    .header-container,
-    .navigation-container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
