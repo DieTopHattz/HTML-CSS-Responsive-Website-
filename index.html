@@ -1,133 +1,180 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
 <head>
-  <meta charset = "UTF-8">
-  <meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energy Drink - Lorem Ipsum</title>
-  <link rel = "stylesheet" href ="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
+  <!-- Hidden checkbox MUST be at body level -->
+  <input type="checkbox" id="menuToggle" class="menu-toggle-checkbox">
+
   <!-- Section Container -->
-  <section class = "container">
+  <section class="container">
     <!-- Header Navbar -->
-    <nav class = "navbar">
-      <div class ="nav-brand">ENERGY DRINK</div>
-      <ul class = "nav-menu">
-        <li><a href = "#" class = "nav-link">Home</a></li>
-        <li><a href = "#" class = "nav-link">Product</a></li>
-        <li><a href = "#" class = "nav-link">About</a></li>
+    <nav class="navbar">
+      <div class="nav-brand">ENERGY DRINK</div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Product</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
       </ul>
-      <button class = "login-btn">Login</button>
+
+      <!-- Mobile Menu Toggle as LABEL -->
+      <label for="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
     </nav>
 
-
     <!-- Content -->
-    <main class = "hero">
-      <div class = "hero-content">
-
+    <main class="hero">
+      <div class="hero-content">
         <!-- Content Kiri -->
-        <div class = "hero-left">
-          <h1 class = "hero-title">ENERGY<br>DRINK</h1>
-          <p class = "hero-description">
+        <div class="hero-left">
+          <h1 class="hero-title">ENERGY<br>DRINK</h1>
+          <p class="hero-description">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
           </p>
-          <button class ="read-more">READ MORE</button>
+          <button class="read-more">READ MORE</button>
         </div>
 
         <!-- Image Content -->
-        <div class = "hero-center">
-          <div class = "drink-container">
-            <img src = "./assets/purple-energy.png" alt = "ENERGY DRINK" class = "drink-image"></img>
-            <div class = "splash-effect"></div>
+        <div class="hero-center">
+          <div class="drink-container">
+            <img src="./assets/purple-energy.png" alt="ENERGY DRINK" class="drink-image">
+            <div class="splash-effect"></div>
           </div>
         </div>
         
-        <!-- Image Kanan -->
-        <div class = "hero-right">
-          <div class = "drink-info">
-          <a href = "#" class = "nav-link">
-            <h3 class = "drink-name">DRINK NAME</h3>
-            <p class = "drink-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-           </a>
+        <!-- Content Kanan -->
+        <div class="hero-right">
+          <div class="drink-info">
+            <a href="#" class="nav-link">
+              <h3 class="drink-name">DRINK NAME</h3>
+              <p class="drink-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
           </div>
                   
-          <div class = "drink-info">
-          <a href = "#" class = "nav-link">
-            <h3 class = "drink-name">DRINK NAME</h3>
-            <p class = "drink-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </a>
+          <div class="drink-info">
+            <a href="#" class="nav-link">
+              <h3 class="drink-name">DRINK NAME</h3>
+              <p class="drink-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
           </div>
 
-          <div class = "drink-info">
-          <a href = "#" class = "nav-link">
-            <h3 class = "drink-name">DRINK NAME</h3>
-            <p class = "drink-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </a>
+          <div class="drink-info">
+            <a href="#" class="nav-link">
+              <h3 class="drink-name">DRINK NAME</h3>
+              <p class="drink-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
           </div>
         </div>
       </div>
 
-
       <!-- Level Section -->
-      <div class = "level-section">
-        <div class = "level-item">
-          <div class = "level-number">01</div>
-          <div class = "level-content">
-            <h4 class = "level-title">LEVEL</h4>
-            <p class = "level-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="level-section">
+        <div class="level-item">
+          <div class="level-number">01</div>
+          <div class="level-content">
+            <h4 class="level-title">LEVEL</h4>
+            <p class="level-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </div>
         </div>
 
-        <div class = "level-item">
-          <div class = "level-number">01</div>
-          <div class = "level-content">
-            <h4 class = "level-title">LEVEL</h4>
-            <p class = "level-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="level-item">
+          <div class="level-number">01</div>
+          <div class="level-content">
+            <h4 class="level-title">LEVEL</h4>
+            <p class="level-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </div>
         </div>
 
-
-        <div class = "level-item">
-          <div class = "level-number">01</div>
-          <div class = "level-content">
-            <h4 class = "level-title">LEVEL</h4>
-            <p class = "level-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="level-item">
+          <div class="level-number">01</div>
+          <div class="level-content">
+            <h4 class="level-title">LEVEL</h4>
+            <p class="level-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </div>
         </div>
       </div>
     </main>
   </section>
 
+  <!-- Slide Out Menu -->
+  <aside class="slide-menu">
+    <div class="menu-header">
+      <div class="menu-logo">
+        <h2>ENERGY DRINK</h2>
+      </div>
+      <!-- Close button that unchecks the checkbox -->
+      <label for="menuToggle" class="close-menu" aria-label="Close menu">
+        <span>&times;</span>
+      </label>
+    </div>
+    
+    <nav class="mobile-nav">
+      <label for="menuToggle">
+        <a href="#" class="mobile-nav-link">Home</a>
+      </label>
+      <label for="menuToggle">
+        <a href="#" class="mobile-nav-link">Product</a>
+      </label>
+      <label for="menuToggle">
+        <a href="#" class="mobile-nav-link">About</a>
+      </label>
+      <label for="menuToggle">
+        <a href="#" class="mobile-nav-link">Contact</a>
+      </label>
+    </nav>
+    
+    <div class="menu-footer">
+      <p>&copy; 2024 ENERGY DRINK. All rights reserved.</p>
+    </div>
+  </aside>
 
   <!-- FOOTER -->
-   <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-col blog-info">
-                <h3>Our Website</h3>
-                <p>Exploring the latest info and ideas on our website</p>
-            </div>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3 class="content-header">Company Name</h3>
+        <p class="content-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
 
-            <div class="footer-col quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <h3 class="content-header">Contact Us</h3>
+        <div class="contact-grid">
+          <div class="contact-icons"><i class="fa-solid fa-location-dot"></i></div>
+          <p class="content-desc">123 Anywhere St., Anj City, ST 12345</p>
 
-            <div class="footer-col follow-us">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+          <div class="contact-icons"><i class="fa-solid fa-phone"></i></div>
+          <p class="content-desc">+123-456-7890</p>
+
+          <div class="contact-icons"><i class="fa-solid fa-globe"></i></div>
+          <a href="mailto:hello@reallygreatsite.com" class="content-desc">hello@reallygreatsite.com</a>
         </div>
-    </footer>
+      </div>
+
+      <div class="footer-content">
+        <h3 class="content-header">Follow Our Social Media</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 ENERGY DRINK. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Overlay that also closes menu when clicked -->
+  <label for="menuToggle" class="menu-overlay"></label>
 </body>
 </html>
